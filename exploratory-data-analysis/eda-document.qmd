@@ -1,21 +1,16 @@
 ---
 title: "Exploring gapminder"
 author: "Your Name"
-format: html
+format: 
+  html:
+    fig-align: "center"
+    fig-width: 4
+    fig-height: 4
+    fig-format: png
+execute: 
+  echo: true
+  cache: false
 ---
-
-
-```{r}
-#| label: setup
-#| include: false
-# more substantial setup for your document
-knitr::opts_chunk$set(echo = TRUE, 
-                      fig.align = "center",
-                      fig.width = 4, 
-                      fig.height = 4, 
-                      dev = "png",
-                      cache = FALSE)
-```
 
 ```{r}
 #| label: library
@@ -26,7 +21,7 @@ library(broom)
 library(knitr)
 ```
 
-````{r}
+```{r}
 #| label: functions
 #| echo: false
 # A function to scale input to 0-1
