@@ -1,17 +1,21 @@
 ---
 title: "02-qmd-figures-chunks"
 author: "Your Name"
-date: 2017/06/27
-format: html
+date: 2024/06/23
+format: 
+  html:
+    fig-height: 7
+    fig-width: 7
+    fig-format: 'png'
+    fig-dpi: 300
 ---
 
 # Tasks
 
-- Change the fig.width, fig.height, and dev of the figure in plot-1
-  - (hint: look at the gear icon in a chunk)
+- Change the fig-width, fig-height, and fig-format of the figure in plot-1
+  - (hint: use tab-complete on the `#|`)
 - Add an option to keep the markdown source code 
-  - (hint: look at the gear icon next to `knit` icon)
-- print the code for one of the figures, but not the other (hint: use `echo = `)
+- Print the code for one of the figures, but not the other (hint: use `echo = `)
 
 # Introduction
 
@@ -40,6 +44,7 @@ We can see that there is an interesting relationship between ozone and solar rad
 
 ```{r}
 #| label: figure-1
+#| fig-align: "center"
 library(ggplot2)
 ggplot(airquality,
        aes(x = Ozone,

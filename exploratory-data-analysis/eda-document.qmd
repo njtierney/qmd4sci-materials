@@ -90,7 +90,7 @@ knitr::kable(fit_coef,
 year_slope <- round(fit_coef$estimate[2], 3)
 ```
 
-The effect of year on life expectancy is `r year_slope`.
+The effect of year on life expectancy is `{r} year_slope`.
 
 # A table of the coefficients is:
 
@@ -106,7 +106,7 @@ x <- 1 + 1 + 6
 ```
 
 ```{r}
-#| label: gg-oz-plot
+#| label: fig-gg-oz-plot
 #| fig-cap: Life expectancy from 1952 - 2007 for Australia. Life expentancy increases
 #|   steadily except from 1962 to 1969. We can safely say that our life expectancy is
 #|   higher than it has ever been!
@@ -119,9 +119,7 @@ gapminder %>%
   geom_point()
 ```
 
-Australia's life expectancy has increased a great deal over the past 50 years
-
-(See Figure \@ref(fig:gg-oz-plot))
+Australia's life expectancy has increased a great deal over the past 50 years. See @fig-gg-oz-plot. 
 
 
 # References
