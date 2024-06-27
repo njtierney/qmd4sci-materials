@@ -6,20 +6,18 @@ format:
   html:
     keep-md: true
     toc: true
+    fig-format: png
   pdf:
     toc: true
+    fig-format: png
   docx:
     toc: true
+    fig-format: png
+execute: 
+  echo: true
 csl: bmj.csl
 Date: 2017/06/27
 ---
-
-```{r}
-#| label: setup
-#| include: false
-knitr::opts_chunk$set(echo = TRUE,
-                      dev = "png")
-```
 
 ```{r}
 #| label: library

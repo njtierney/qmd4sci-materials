@@ -4,29 +4,24 @@ author: Nicholas Tierney
 Date: 2017/06/27
 format: 
 bibligraphy: packages.bib
+echo = TRUE
+fig-dev: "png"
 ---
 
 # Tasks
 
 - Get this quarto document to compile
   - hint:
-    - knit the document and look at the line for the error
+    - render the document and look at the line for the error
     - if there is an error:
        - recreate the session in an interactive session:
-          - restart R
-          - run all chunks below (top section Run>arrow>run all chunks below)
-          - find the chunk that did not work, fix that chunk
-          - run all chunks below (top section Run>arrow>run all chunks below)
-          - explore working directory issues
-            - where is the packages.bib file?
-            - remember that the quarto directory is where the .qmd file lives
-
-```{r}
-#| label: setup
-#| include: false
-knitr::opts_chunk$set(echo = TRUE,
-                      dev = "png"})
-```
+          - Restart R
+          - Run all chunks below (top section Run>arrow>run all chunks below)
+          - Find the chunk that did not work, fix that chunk
+          - Run all chunks below (top section Run>arrow>run all chunks below)
+          - Explore working directory issues
+            - Where is the packages.bib file?
+            - Remember that the quarto directory is where the .qmd file lives
 
 ```{r }
 #| label: library

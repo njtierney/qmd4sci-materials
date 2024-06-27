@@ -2,7 +2,7 @@
 title: "01-qmd-example"
 author: "YOUR NAME"
 date: "yyyy/mm/dd"
-format:
+format: 
   docx: default
   html: default
 ---

@@ -10,11 +10,11 @@ format: html
 
 - set a global option to: 
   - hide all of the code
-    - hint: put `knitr::opts_chunk$set()` in a chunk and set the options
+    - hint: Set YAML options with `execute:`
   - set the graphics device
-    - hint: `dev = "png"` or even `dev = c("png", "pdf","tiff")`
+    - hint: `fig-format: png`
   - set the DPI
-    - hint: `dpi = 300`
+    - hint: `dpi: 300`
 
 # Introduction
 
@@ -91,5 +91,5 @@ knitr::kable(coef(lm_fit))
 
 ```
 
-`r coef(lm_fit)[2]`
-`broom::glance(lm_fit)$r.squared`
+`{r} coef(lm_fit)[2]`
+`{r} broom::glance(lm_fit)$r.squared`

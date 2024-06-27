@@ -6,7 +6,7 @@ format:
   html:
     fig-height: 7
     fig-width: 7
-    fig-format: 'png'
+    fig-format: png
     fig-dpi: 300
 ---
 
