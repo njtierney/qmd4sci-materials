@@ -8,3 +8,5 @@
 .httr-oauth
 .quarto
 **/*_files/*
+*.pdf
+*.docx
