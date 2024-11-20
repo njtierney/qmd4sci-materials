@@ -2,6 +2,7 @@
 title: "Quarto example"
 author: "Nicholas Tierney"
 bibliography: packages.bib
+date: today
 format:
   html:
     keep-md: true
@@ -16,7 +17,6 @@ format:
 execute: 
   echo: true
 csl: bmj.csl
-Date: 2017/06/27
 ---
 
 ```{r}
