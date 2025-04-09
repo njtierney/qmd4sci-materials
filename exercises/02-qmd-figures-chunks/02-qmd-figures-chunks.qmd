@@ -4,64 +4,86 @@ author: "Your Name"
 date: today
 format: 
   html:
-    fig-height: 7
-    fig-width: 7
+    keep-md: true
+    fig-height: 10
+    fig-align: center
+    fig-asp: 1.5
     fig-format: png
     fig-dpi: 300
 ---
 
-# Tasks
+# Tasks from "Figures tables captions"
 
-- Change the fig-width, fig-height, and fig-format of the figure in plot-1
+- Create a summary of your gapminder data, put it into a table.
+- Add a caption to this table.
+- Set the number of decimals to 2.
+- Create a plot
+- Add a caption
+
+```{r}
+library(tidyverse)
+library(skimr)
+```
+
+
+```{r}
+gap <- read_csv(here::here("data", "gapminder.csv"))
+gap
+```
+
+## Create a summary of gapminder data into a table
+
+- Add a caption
+- Set number of decimals to 2
+
+## Adding a figure of gapminder
+
+- Create a plot
+- Add a caption
+
+
+```{r}
+```
+
+
+# Tasks from "Figures tables captions"
+
+- Change the fig-width, fig-height, and fig-format of the figure in the plot above
   - (hint: use tab-complete on the `#|`)
 - Add an option to keep the markdown source code 
 - Print the code for one of the figures, but not the other (hint: use `echo = `)
 
-# Introduction
 
-This is a simple analysis of the New York Air Quality Measurements using the R statistical programming language. As stated in the helpfile `?airquality`, this dataset contains:
+# Tasks from "Figures tables captions"
 
-> Daily air quality measurements in New York, May to September 1973.
+- Download the [gapminder logo](https://www.gapminder.org/wp-content/themes/gapminder2/images/gapminder-logo.svg)
+- Put it into a new directory called "figs" (at the top level)
+- Insert the image into your "02-qmd-figures-chunks.qmd" Quarto document around where you introduce gapminder.
+- Try using both markdown `![]()` syntax, and `knitr::include_graphics()`.
+- Hint: Remember to refer to the image in the right spot using here!
 
-And the dataset is sourced from:
+# Tasks from "Changing figures"
 
-> ... the New York State Department of Conservation (ozone data) and the National Weather Service (meteorological data).
+1. Create three figures, with the respective dimensions (`fig-height` and `fig-width`)
+    * 2x2
+    * 10x10
+    * 4x7
+2. Now add to those figures, the following:
+    * `fig-align = "center"`
+3. Now change the output type to be "svg"
 
-It contains the following variables
+# Tasks from "Changing Figures"
 
-- Ozone: Mean ozone in parts per billion from 1300 to 1500 hours at Roosevelt Island.
-- Solar.R: Solar radiation in Langleys in the frequency band 4000–7700 Angstroms from 0800 to 1200 hours at Central Park.
-- Wind: Average wind speed in miles per hour at 0700 and 1000 hours at LaGuardia Airport.
-- Temp: Maximum daily temperature in degrees Fahrenheit at La Guardia Airport.
-- Month: Month (1--12)
-- Day: Day of month (1--31)
+1. Set the global options in the "02-qmd-figures-chunks.qmd" document to set:
+  * `fig-height`
+  * `fig-width`
+  * `fig-format`
 
-We are going to explore the relationship between solar radiation and other selected variables, solar radiation, wind, and temperature.
 
-# Results
+# Tasks from "Changing Figures"
 
-We can see that there is an interesting relationship between ozone and solar radiation in figure 1 below, plotted using ggplot2.
+- Save your images to a specific directory of your choice
 
-```{r}
-#| label: figure-1
-#| fig-align: "center"
-library(ggplot2)
-ggplot(airquality,
-       aes(x = Ozone,
-           y = Solar.R)) + 
-  geom_point()
+# Tasks from "Math"
 
-```
-
-We can also see that there is an interesting relationship between Ozone and temperature.
-
-```{r}
-#| label: figure-2
-
-ggplot(airquality,
-       aes(x = Ozone,
-           y = Temp)) + 
-  geom_point()
-
-```
-
+- Add some math to this document

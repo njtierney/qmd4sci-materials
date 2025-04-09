@@ -7,6 +7,23 @@ format: html
 
 # Tasks
 
+- Convert your output to use `fig-` prefixes to reference figures.
+
+# Tasks
+
+- Add a new plot in your document and reference it
+
+# Tasks
+
+- Create a table in your document and refer to it in text
+
+
+# Tasks
+
+- Reference a section in the report.
+
+# Tasks
+
   - fit a linear model of Ozone ~ Temp + Wind + Solar.R 
     - (hint: use `lm`)
   - Make a table of the coefficients from the linear model 

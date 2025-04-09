@@ -2,27 +2,46 @@
 title: "01-qmd-example"
 author: "YOUR NAME"
 date: "yyyy/mm/dd"
-format: 
-  docx: default
-  html: default
+format: html
 ---
+
+
+```{r}
+#| label: libraries
+library(tidyverse)
+library(visdat)
+library(naniar)
+library(forecast)
+```
+
+```{r}
+gap <- read_csv(here::here("data", "gapminder.csv"))
+gap
+```
+
 
 # Tasks
 
-- Make a report with an introduction heading
+Run some brief summaries of the data in the Quarto document:
+
+- hist(data$)
+- How big is the data?
+- How many countries are there?
+- What was the lowest life expectancy in Australia’s History?
+- How about the lowest GDP for Australia?
+- Where does Australia rank in GDP in 1997?
 - Add your name and date to the YAML header
 
 Describe the data from the airquality dataset using blockquotes (hint: `?airquality`)
 
-Provide:
+```{r}
+#| label: read-gapminder
+gap <- read_csv(here::here("data", "gapminder.csv"))
+gap
+```
 
-- a bulleted list describing the variables used in the data
-- A direct quote from the ?data set describing the data
-- Make a code chunk
-- Make a library call in the code chunk
-- Make a plot of ozone and solar radiation
+```{r}
+```
 
-Extra: 
 
-- Make a plot of ozone and temperature
 

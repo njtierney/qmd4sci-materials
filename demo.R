@@ -1,6 +1,6 @@
 # Exploring gapminder data and demonstrating reading in data
 # By Nicholas Tierney, to demonstrate how to read in data
-# 2019-04-24
+# 2025-04-09
 
 # Libraries --------------------------------------------------------------------
 library(readr)

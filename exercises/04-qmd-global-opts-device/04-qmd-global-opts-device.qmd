@@ -5,7 +5,6 @@ date: today
 format: html
 ---
 
-
 # Tasks
 
 - set a global option to: 

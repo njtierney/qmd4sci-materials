@@ -14,7 +14,6 @@ execute:
 
 ```{r}
 #| label: library
-#| echo: false
 #| message: false
 library(tidyverse)
 library(broom)
@@ -32,7 +31,8 @@ scale_01 <- function(x){
 
 ```{r}
 #| label: data-read-in
-gapminder <- read_csv(here::here("data","gapminder.csv"))
+gapminder <- read_csv(here::here("data","gapminder.csv"),
+                      show_col_types = FALSE)
 ```
 
 Here are the first 6 rows of data
